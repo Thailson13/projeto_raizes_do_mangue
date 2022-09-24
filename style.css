@@ -1,11 +1,11 @@
 /* IMPORTES */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;900&family=Oswald&family=Roboto:wght@300&family=Zilla+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
 /* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 li {
@@ -16,17 +16,30 @@ li {
 /* Builds */
 ._100px {
     width: 100px;
-    margin: 8px;
+
+
 }
 
-html{
-    scroll-behavior: smooth;
+._203px {
+    width: 203px;
+    
 }
+
+._309px {
+    width: 309px;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+
+}
+
 body {
     background: #191B1D;
     
 }
-
 
 .emphasis {
     color: greenyellow;
@@ -43,7 +56,7 @@ body {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 500px;
     border-radius: 8px;
 }
 
@@ -52,14 +65,13 @@ body {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
-    height: 350px;
+    width: 500px;
+    height: 300px;
     border-radius: 8px;
 }
 
-
-
 /* Heading Page */
+
 #heading #elements {
     display: flex;
     justify-content: space-between;
@@ -70,10 +82,6 @@ body {
     color: #228b22;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 43pt;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     cursor: pointer;
    
@@ -89,6 +97,7 @@ body {
 
 
 #heading #elements #avatar {
+    width: 100px;
     margin: 4px;
     margin-right: 0;
     cursor: pointer;
@@ -111,8 +120,8 @@ body {
 }
 
 #heading nav .navButton { 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1.3px;
+    padding-right: 1.3px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin: 10px;
@@ -133,6 +142,7 @@ body {
     border-color: forestgreen;
     border-width: 2px;
     box-sizing: border-box;
+
 }
 
 #heading nav a {
@@ -143,25 +153,25 @@ body {
 /* Main Page */
 .textCard {
     margin-top: 3vh;
-    border-style: solid;
-    border-color:#2F3133;
-    border-width: 1px;
-    width: 800px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 8px;
+    display: flex;
     
     
 }
 
 .textCard .textDivision {
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#2F3133;
+    border-width: 1px;
     margin: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
   
-
 }
 
 .textCard .textDivision .titleCard {
@@ -176,26 +186,94 @@ body {
 .textCard .textDivision .text01 {
     color: white;
     margin-bottom: 10px;
-    font-size: 16pt;
-    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-family: 'Roboto Slab', serif;
     text-align: justify;
     
 }
 
-.textCard .textDivision img{
+.textCard .textDivision img {
     margin-right: auto;
     margin-left: auto;
     display: flex;
     justify-content: center;
 }
 
+.textCard1 {
+    margin-top: 3vh;
+    display: flex;
+    
+}
+
+.textCard1 .textDivision {
+    border-radius: 8px;
+    border-style: solid;
+    border-color:#2F3133;
+    border-width: 1px;
+    margin: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.textCard1 .textDivision .titleCard {
+    color: forestgreen;
+    margin: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32pt;
+    text-align: center;
+    
+}
+
+.textCard1 .textDivision .text01 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 12pt;
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+    
+    
+}
+
+#inputDiv form{
+    display: grid;
+    margin-bottom: auto;
+    background-color: #151719;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #2F3133;
+    margin-top: 10px;
+ 
+}
+
+#inputDiv form input{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+
+}
+
+#submitCursor{
+    cursor: pointer;
+}
+
+#inputDiv h1{
+    text-align: center;
+    color: #228b22;
+    font-family: 'Bebas Neue', sans-serif;
+   
+}
 
 /* Footer */
-
-
-footer div a {
-    color: white;
-}
 
 
 
@@ -285,17 +363,29 @@ footer div a {
 
 }
 
+.textCard1 .textDivision{
+    animation: fromTop.6s;
+    animation-delay: 0.2s;
+
+}
+
 .textCard .textDivision{
     animation: fromTop.6s;
     animation-delay: 0.2s;
 
 }
 
+#inputDiv{
+    animation: fromLeft 0.6s;
+    animation-delay: 0.2s;
+}
+
+
 /* BUTTON TOP RETURN */
 #returnTop{
     position: fixed;
     bottom: 20px;
-    right: 20px;
-    width: 60px;
+    right: 30px;
     cursor: pointer;
+    animation: fromTop .6s;
 }
