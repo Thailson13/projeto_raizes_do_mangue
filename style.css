@@ -82,9 +82,12 @@ body {
     color: #228b22;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 43pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     cursor: pointer;
-   
 }
 
 #heading #elements #subTitle {
