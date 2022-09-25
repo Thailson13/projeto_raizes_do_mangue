@@ -1,5 +1,6 @@
 /* IMPORTES */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+
 /* Reset */
 * {
     margin: 0;
@@ -22,7 +23,7 @@ li {
 
 ._203px {
     width: 203px;
-    
+
 }
 
 ._309px {
@@ -30,6 +31,10 @@ li {
 
 }
 
+._50px {
+    width: 36px;
+
+}
 
 html {
     scroll-behavior: smooth;
@@ -38,7 +43,7 @@ html {
 
 body {
     background: #191B1D;
-    
+
 }
 
 .emphasis {
@@ -48,7 +53,7 @@ body {
 .link {
     font-family: 'Zilla Slab', sans-serif;
     font-size: 12pt;
-    color:greenyellow;
+    color: greenyellow;
 }
 
 .imageSize {
@@ -91,11 +96,11 @@ body {
 }
 
 #heading #elements #subTitle {
-   color: white;
-   text-align: center;
-   font-size: 10pt;
-   font-family: 'Inter', sans-serif;
-   cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 10pt;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
 
@@ -104,7 +109,7 @@ body {
     margin: 4px;
     margin-right: 0;
     cursor: pointer;
-    
+
 }
 
 /* Browser Page */
@@ -122,7 +127,7 @@ body {
     justify-content: space-around;
 }
 
-#heading nav .navButton { 
+#heading nav .navButton {
     padding-left: 1.3px;
     padding-right: 1.3px;
     padding-top: 5px;
@@ -150,7 +155,7 @@ body {
 
 #heading nav a {
     text-decoration: none;
-    
+
 }
 
 /* Main Page */
@@ -160,21 +165,21 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    
-    
+
+
 }
 
 .textCard .textDivision {
     border-radius: 8px;
     border-style: solid;
-    border-color:#2F3133;
+    border-color: #2F3133;
     border-width: 1px;
     margin: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-  
+
 }
 
 .textCard .textDivision .titleCard {
@@ -183,7 +188,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 32pt;
     text-align: center;
-    
+
 }
 
 .textCard .textDivision .text01 {
@@ -192,7 +197,7 @@ body {
     font-size: 12pt;
     font-family: 'Roboto Slab', serif;
     text-align: justify;
-    
+
 }
 
 .textCard .textDivision img {
@@ -205,13 +210,13 @@ body {
 .textCard1 {
     margin-top: 3vh;
     display: flex;
-    
+
 }
 
 .textCard1 .textDivision {
     border-radius: 8px;
     border-style: solid;
-    border-color:#2F3133;
+    border-color: #2F3133;
     border-width: 1px;
     margin: 10px;
     padding-bottom: 10px;
@@ -231,7 +236,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 32pt;
     text-align: center;
-    
+
 }
 
 .textCard1 .textDivision .text01 {
@@ -240,23 +245,28 @@ body {
     font-size: 12pt;
     font-family: 'Roboto Slab', serif;
     text-align: justify;
-    
-    
+
+
 }
 
-#inputDiv form{
-    display: grid;
-    margin-bottom: auto;
-    background-color: #151719;
+#inputDiv {
     border-style: solid;
     border-width: 1px;
-    border-radius: 8px;
+    border-radius: 6px;
     border-color: #2F3133;
+    height: 240px;
     margin-top: 10px;
- 
+
 }
 
-#inputDiv form input{
+#inputDiv form {
+    display: grid;
+    background-color: #151719;
+    margin-top: 10px;
+
+}
+
+#inputDiv form input {
     padding: 10px;
     margin: 5px;
     border-radius: 8px;
@@ -265,29 +275,116 @@ body {
 
 }
 
-#submitCursor{
+#submitCursor {
     cursor: pointer;
 }
 
-#inputDiv h1{
+#inputDiv h1 {
     text-align: center;
     color: #228b22;
     font-family: 'Bebas Neue', sans-serif;
-   
+
 }
 
-/* Footer */
+/* FOOTER */
+#footerBox {
+    border-style: solid;
+    border-color: #2F3133;
+    border-top-width: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background: #151719;
+    color: aliceblue;
+    margin-top: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 
+}
+
+#infoBox {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#devBox {
+    display: flex;
+
+}
+
+#infoBox #devBox #listDev1 h1 {
+    margin-right: 6px;
+    font-size: 14pt;
+    margin-top: 10px;
+    color: forestgreen;
+
+}
+
+#infoBox #devBox #listDev2 h1 {
+    margin-right: 6px;
+    font-size: 14pt;
+    margin-top: 10px;
+    color: forestgreen;
+}
+
+#infoBox #devBox #listDev1 li {
+
+    margin-top: 2px;
+}
+
+#infoBox #devBox #listDev2 li {
+
+    margin-top: 2px;
+}
+
+#socialBox #socialTitle {
+    font-size: 14pt;
+    margin-top: 10px;
+    color: forestgreen;
+    text-align: center;
+
+}
+
+#socialBox ul {
+    display: flex;
+
+}
+
+#socialBox li {
+    margin: 10px;
+
+}
+
+#socialBox img {
+    border-style: solid;
+    border-color: #2F3133;
+    border-width: 2px;
+    border-radius: 100%;
+
+}
+
+#socialBox img:hover {
+    border-color: forestgreen;
+
+}
+
+#companyBox {
+    margin-top: 10px;
+    text-align: center;
+    background: #2F3133;
+
+}
 
 
 /* ANIMATION*/
 @keyframes fromLeft {
-    from{
+    from {
         opacity: 0;
         transform: translateX(30px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateX(0);
     }
@@ -295,7 +392,7 @@ body {
 }
 
 
-#heading nav .navButton{
+#heading nav .navButton {
     animation: fromLeft 0.6s .1s backwards;
 }
 
@@ -329,65 +426,64 @@ body {
 
 
 @keyframes fromBottom {
-    from{
+    from {
         opacity: 0;
         transform: translateY(-32px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 
 }
 
-#heading #elements #avatar{
+#heading #elements #avatar {
     animation: fromBottom .6s;
 }
 
-#heading #elements #title{
+#heading #elements #title {
     animation: fromBottom .6s;
 }
 
-#heading #elements #subTitle{
+#heading #elements #subTitle {
     animation: fromBottom .6s;
 }
 
 @keyframes fromTop {
-    from{
+    from {
         opacity: 0;
         transform: translateY(30px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 
 }
 
-.textCard1 .textDivision{
+.textCard1 .textDivision {
     animation: fromTop.6s;
     animation-delay: 0.2s;
 
 }
 
-.textCard .textDivision{
+.textCard .textDivision {
     animation: fromTop.6s;
     animation-delay: 0.2s;
 
 }
 
-#inputDiv{
+#inputDiv {
     animation: fromLeft 0.6s;
     animation-delay: 0.2s;
 }
 
-
 /* BUTTON TOP RETURN */
-#returnTop{
+#returnTop {
     position: fixed;
-    bottom: 20px;
+    bottom: 15px;
     right: 30px;
     cursor: pointer;
     animation: fromTop .6s;
